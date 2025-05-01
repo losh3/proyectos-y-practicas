@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+    padding: 15px 20px;
+}
+header img{
+    height: 80px;
+}
+nav ul {
+    display: flex;
+}
