@@ -23,7 +23,7 @@ nav ul {
     margin: 0;
 }
 nav a{
-    color: aliceblue;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
@@ -31,7 +31,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
- /* MEDIA QUERY*/
+ /* MEDIA QUERY - MENU DE NAVEGACIÓN*/
 @media (max-width:540px){
     header{
         flex-direction: column;
@@ -83,6 +83,7 @@ nav a:hover{
     max-width: 1000px;
     width: 100%;
 }
+/* ESTILOS DE TEXTO PRINCIPAL, PARRAFO Y LISTA DESORDENADA (BENEFICIOS)*/
 .hero-text{
     flex: 1 1 300px;
     margin-right: 30px;
@@ -93,7 +94,7 @@ nav a:hover{
     margin-bottom: 20px;
 }
 .hero-text p{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #fff;
 }
 .hero-text ul{
@@ -109,7 +110,9 @@ nav a:hover{
     font-size: 1.2em;
     color: #fff;
 }
-/* FORMULARIO DEL HERO */
+/* FIN DE ESTILOS DE TEXTO PRINCIPAL, PARRAFO Y LISTA DESORDENADA (BENEFICIOS)*/
+
+/* ESTILOS DE FORMULARIO DEL HERO */
 .hero-form {
     flex: 1 1 300px;  
     padding: 10px 30px 30px;
@@ -117,13 +120,11 @@ nav a:hover{
     border-radius: 20px;
     height: fit-content;
 }
-.hero-form h2{
-    /* padding-bottom: 20px; */
+.hero-form h2{   
     font-size: 2rem;
     color: #000;
     text-align: center;
 }
-
 .hero-form input,
 .hero-form select {
   width: 100%;
@@ -137,7 +138,7 @@ nav a:hover{
 .hero-form button {
     width: 100%;
     padding: 12px;
-    background-color: #0099cc;
+    background-color: #019116;
     color: white;
     border: none;
     border-radius: 5px;
@@ -146,5 +147,140 @@ nav a:hover{
     transition: background 0.3s;
   }
   .hero-form button:hover {
-    background-color: #023e8a;
+    background-color: #067302;
 }
+/* FIN DE ESTILOS DE FORMULARIO DEL HERO */
+
+/* MEDIA QUERYS - HERO PRINCIPAL */
+@media (max-width: 1024px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      gap: 20px;
+    }
+    .hero-text{
+        margin-right: 0;
+        text-align: center;
+    }
+    .hero-form{
+        max-width: 400px;
+    }
+}
+
+/* ESTILOS DE TARJETAS DE SERVICIOS */
+.services{
+    padding: 50px 10%;
+    background-color: #ececec;
+    text-align: center;
+}
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #000;
+  }
+.grid-services{   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;   
+}
+.grid-services img{
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.tj-services{
+    background-color: #fff;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.tj-services h3 {
+    font-size: 1.2rem;
+    color: #005580;
+    margin-bottom: 10px;
+}
+.tj-services p{
+    font-size: 0.95rem;
+    color: #333;
+}
+.tj-services:hover{
+    transform: translateY(-5px);
+}
+/* MEDIA QUERYS - TARJETAS DE SERVICIOS */
+@media (max-width:1360px){
+    .grid-services{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+/* FIN DE ESTILOS DE TARJETAS DE SERVICIOS */
+
+/* ESTILOS DE TESTIMONIOS */
+.testimonios {
+    padding: 3em;
+    background-color: #fff;
+  }
+  
+  .testimonios h2 {
+    text-align: left;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  
+  .content-testi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .tj-testi {
+    flex: 1 1 calc(33.333% - 1rem); 
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #ececec;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    min-width: 250px;
+  }
+  
+  .testi-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testi-texto h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .testi-texto p {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .content-testi {
+      flex-direction: column;
+    }
+  
+    .tj-testi {
+      flex: 1 1 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .testi-texto {
+      margin-top: 0.5rem;
+    }
+  }
