@@ -353,8 +353,7 @@ nav a:hover{
   .footer {
     background-color: #010101;
     color: white;
-    padding: 40px 20px 20px;
-    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px 20px;    
   }
   .footer-container {
     display: flex;
@@ -398,7 +397,7 @@ nav a:hover{
   .social-icons img {
     width: 30px;
     height: 30px;
-    filter: brightness(0) invert(1); /* para íconos oscuros */
+    filter: brightness(0) invert(1);
     transition: transform 0.3s;
   }
   
@@ -409,7 +408,7 @@ nav a:hover{
   .footer-copy {
     text-align: center;
     margin-top: 30px;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: #ccc;
   }
   
