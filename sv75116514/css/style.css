@@ -110,9 +110,9 @@ nav a:hover{
     font-size: 1.2em;
     color: #fff;
 }
-/* FIN DE ESTILOS DE TEXTO PRINCIPAL, PARRAFO Y LISTA DESORDENADA (BENEFICIOS)*/
+/* FIN DE ESTILOS DE TEXTO PRINCIPAL, PARRAFO Y LISTA DESORDENADA (BENEFICIOS) - HERO PRINCIPAL*/
 
-/* ESTILOS DE FORMULARIO DEL HERO */
+/* ESTILOS DE FORMULARIO DEL HERO - PRINCIPAL*/
 .hero-form {
     flex: 1 1 300px;  
     padding: 10px 30px 30px;
@@ -149,7 +149,7 @@ nav a:hover{
   .hero-form button:hover {
     background-color: #067302;
 }
-/* FIN DE ESTILOS DE FORMULARIO DEL HERO */
+/* FIN DE ESTILOS DE FORMULARIO DEL HERO - PRINCIPAL*/
 
 /* MEDIA QUERYS - HERO PRINCIPAL */
 @media (max-width: 1024px) {
@@ -220,13 +220,15 @@ nav a:hover{
 /* ESTILOS DE TESTIMONIOS */
 .testimonios {
     padding: 3em;
-    background-color: #fff;
+    background-color: #d8d6bf; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
   }
   
   .testimonios h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 1.5em;
     font-size: 2em;
+    color: #333;
   }
   
   .content-testi {
@@ -241,10 +243,10 @@ nav a:hover{
     display: flex;
     align-items: center;
     gap: 1em;
-    background-color: #ececec;
+    background-color: #FFF;
     padding: 1em;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     box-sizing: border-box;
     min-width: 250px;
   }
@@ -282,5 +284,66 @@ nav a:hover{
   
     .testi-texto {
       margin-top: 0.5rem;
+    }
+  }
+
+  .contacto {
+    padding: 3em;
+    background-color: #f4f4f4;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  .boton-form {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-form:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px){
+    .boton-form{
+        align-self: center;
     }
   }
