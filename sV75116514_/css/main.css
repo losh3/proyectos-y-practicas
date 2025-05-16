@@ -10,8 +10,9 @@
   font-family: "Ancizar Serif", serif;
 }
 
-.container h2 {
+.container h1 {
   color: #F2C36B;
+  font-size: bold;
 }
 
 .container p {

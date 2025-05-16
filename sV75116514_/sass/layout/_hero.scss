@@ -8,10 +8,11 @@
     height: 50vh;
 }
 .container{
-    font-family: vars.$title-primary;
+    font-family: vars.$letter-primary;
 }
-.container h2{
+.container h1{
     color: vars.$subtitles-primary;
+    font-size: bold;
 }
 .container p{
     color: vars.$subtitles-secundary;
