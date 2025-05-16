@@ -1,0 +1,18 @@
+@use '../bases/variables' as vars;
+
+.hero-section{
+    background-image: url(../img/hover.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.container{
+    font-family: vars.$title-primary;
+}
+.container h2{
+    color: vars.$subtitles-primary;
+}
+.container p{
+    color: vars.$subtitles-secundary;
+}

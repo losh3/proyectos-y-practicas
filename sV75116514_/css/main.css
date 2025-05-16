@@ -1,0 +1,21 @@
+.hero-section {
+  background-image: url(../img/hover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.container {
+  font-family: "Ancizar Serif", serif;
+}
+
+.container h2 {
+  color: #F2C36B;
+}
+
+.container p {
+  color: #BFB188;
+}
+
+/*# sourceMappingURL=main.css.map */
