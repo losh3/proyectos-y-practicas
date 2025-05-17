@@ -61,9 +61,6 @@ nav a {
   color: white;
   text-decoration: none;
 }
-nav a:hover {
-  color: #A6624D;
-}
 
 .productos {
   display: grid;
@@ -193,8 +190,8 @@ nav a:hover {
 .tj-base .avatar, .clientes .tj-clientes .avatar {
   border-radius: 50%;
   overflow: hidden;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 1rem;
 }
 .tj-base .avatar img, .clientes .tj-clientes .avatar img {
@@ -258,6 +255,57 @@ nav a:hover {
     flex: 1 1 22%;
     max-width: 22%;
   }
+}
+
+.footer1 {
+  background-color: #0C0D0A;
+  color: white;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+.footer1 .footer_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .footer1 .footer_cont {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.footer1 .footer-nave {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer1 .footer-nave a {
+  color: white;
+  text-decoration: none;
+}
+.footer1 .footer-nave a:hover {
+  text-decoration: underline;
+  color: #D9AC84;
+}
+.footer1 .footer__social {
+  display: flex;
+  gap: 1rem;
+}
+.footer1 .footer__social a {
+  color: white;
+  font-size: 1.5rem;
+}
+.footer1 .footer__social a:hover {
+  color: #D9AC84;
+}
+.footer1 .footer__copy {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #bbb;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,11 +9,7 @@ nav {
     }
   
     a {
-      color: white;
+      color:vars.$color-letter;
       text-decoration: none;
-  
-      &:hover {
-        color: vars.$color-primary;
-      }
     }
   }
