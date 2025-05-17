@@ -1,0 +1,19 @@
+@use '../bases/variables' as vars;
+
+
+nav {
+    background-color: vars.$color-dark;
+  
+    .size-img {
+      width: 30px;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+  
+      &:hover {
+        color: vars.$color-primary;
+      }
+    }
+  }
